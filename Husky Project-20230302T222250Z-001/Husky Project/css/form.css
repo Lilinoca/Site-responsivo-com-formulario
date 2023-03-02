@@ -1,0 +1,144 @@
+.container{
+    width: 100%;
+    display: flex;
+    background-color: #e3e4e6;
+    flex-direction: column;
+    padding: 0;
+}
+
+.container h1, fieldset h1{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+fieldset{
+    width: 100%;
+    margin: auto;
+    line-height: 35px;
+    text-align: center;
+    border-top: 10px solid #fff;
+}
+
+fieldset h1{
+    margin-top: 50px;
+}
+
+fieldset p{
+    margin-bottom: 50px;
+}
+
+.container #form{
+    padding: 35px;
+}
+
+#form .nome-email{
+    display: flex;
+}
+
+#form .input-box{
+    flex: 1;
+    margin-top: 10px;
+    display: flex;
+    gap: 25px;
+}
+
+#form .input-box input, .input-box textarea{
+    width: 100%;
+    flex: 1;
+    height: 30px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid rgb(132, 132, 132);
+    border-bottom-width: 3.5px;
+}
+
+#form .input-box textarea{
+    height: 120px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+#form .input-box span{
+    margin-left: 5px;
+    margin-top: 6px;
+    }
+
+#form .idade label{
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#form .idade input{
+    height: 30px;
+    width: 10%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(132, 132, 132);
+    border-bottom-width: 2px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    margin-left: 170px;
+}
+
+#form .idade span{
+    color: red;
+    margin-left: 30px;
+    display: none;
+}
+
+#form .buttons{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+#form .buttons input{
+    height: 30px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    color: rgb(217 217 217);
+    background-color: #16466a;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#form .buttons input:hover{
+    color: #16466a;
+    background-color: rgb(157, 157, 157);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 40px;
+}
+
+footer .social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-icons a{
+    padding: 0 20px;
+}
+
+
+
+@media (max-width: 1000px){
+    #form .nome-email{
+        flex-direction: column;
+}
+
+
+}
